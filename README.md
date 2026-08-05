@@ -1,13 +1,13 @@
-# CS210-Examples
+# CS212-Examples
 
-Example code used in Lane CC CS210: Intro to AI Programming.
+Example code used in Lane CC CS212: AI Programming 1.
 
-Course materials: https://github.com/LCC-CIT/CS210-CourseMaterials/
+Course materials: https://github.com/LCC-CIT/CS212-CourseMaterials/
 
 ## Examples for Lab Assignments
 
 - [ToyExpertSystems](ToyExpertSystems/) for Lab 1.  
-Small “toy” expert systems and lab examples (coffee order advisor; medical diagnosis in Python/JS/C#; CS210 Lab 01 artifact).
+Small “toy” expert systems and lab examples (coffee order advisor; medical diagnosis in Python/JS/C#; CS212 Lab 01 artifact).
 
 - [ExpertStytem-MedicalDiagnosis_V2](ExpertStytem-MedicalDiagnosis_V2/) for Lab 2.  
 Forward-chaining rule-based medical diagnosis expert system with a separate inference engine and knowledge base; rules can be hard-coded or loaded from CSV. Includes a detailed [README](ExpertStytem-MedicalDiagnosis_V2/README.md) and a small test suite.
