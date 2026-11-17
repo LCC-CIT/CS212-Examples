@@ -1,0 +1,14 @@
+[project]
+name = "chatcompletiondemo"
+version = "0.1.0"
+description = "Minimal OpenAI Chat Completions demo"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "openai>=1.51.0",
+  "python-dotenv>=1.0.1",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
