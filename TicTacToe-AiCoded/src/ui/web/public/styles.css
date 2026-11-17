@@ -1,0 +1,59 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f5f7fb;
+}
+
+.container {
+  width: min(90vw, 420px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.cell {
+  height: 80px;
+  border: 1px solid #d9dce5;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cell:disabled {
+  cursor: default;
+  background: #f1f3f8;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: #b91c1c;
+  min-height: 1.2rem;
+}

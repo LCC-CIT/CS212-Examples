@@ -1,0 +1,24 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Tic-Tac-Toe with shared OOP engine, console UI, and web UI",
+  "main": "src/app/bootstrap-console.js",
+  "scripts": {
+    "start:console": "node src/app/bootstrap-console.js",
+    "start:web": "node src/app/bootstrap-web.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "tictactoe",
+    "node",
+    "oop"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
