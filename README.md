@@ -20,4 +20,6 @@ Forward-chaining rule-based medical diagnosis expert system with a separate infe
 - [TicTacToe-Minimax](TicTacToe-Minimax/)
   - Tic-Tac-Toe with Minimax (recursive and iterative implementations) and a simple game driver.
 
+- There is an additional example repo for the Dots and Boxes game: [CS212-DotsAndBoxesGame](https://github.com/LCC-CIT/CS212-DotsAndBoxesGame).
+
 
