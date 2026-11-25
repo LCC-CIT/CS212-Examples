@@ -187,3 +187,4 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 .DS_Store
+ChatCompletionDemo/OpenCode.env

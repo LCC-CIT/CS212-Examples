@@ -8,15 +8,26 @@ def main() -> None:
     """Interactive console chat using the Chat Completions API."""
     load_dotenv()
     api_key = getenv("OPENAI_API_KEY")
+    api_endpoint = getenv("OPENAI_BASE_URL")
+    model = getenv("OPENAI_MODEL")
 
-    if not api_key:
-        print("Missing OPENAI_API_KEY in .env")
+    missing_settings = [
+        name
+        for name, value in (
+            ("OPENAI_API_KEY", api_key),
+            ("OPENAI_BASE_URL", api_endpoint),
+            ("OPENAI_MODEL", model),
+        )
+        if not value
+    ]
+    if missing_settings:
+        print(f"Missing settings in .env: {', '.join(missing_settings)}")
         return
 
     client = OpenAI(
-        base_url="https://openrouter.ai/api/v1",
+        base_url=api_endpoint,
         api_key=api_key,
-        )
+    )
 
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
@@ -43,7 +54,7 @@ def main() -> None:
 
         try:
             response = client.chat.completions.create(
-                model="baidu/ernie-5.5-flash-preview:free",
+                model=model,
                 messages=messages,
             )
         except Exception as error:
